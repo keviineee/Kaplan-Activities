@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .menu {
+    position: relative;
+    font-size: 20px;
+    color: rgb(174, 138, 71);
+    font-weight: 500;
+    text-decoration: none;
+}  
+
+.navbar .ordernowbutton {
+    padding: 20px 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 50px;
+}
+
+.navbar .ordernowbutton:hover {
+    background-color: rgb(184, 49, 0);
+    transition: 0.5s;
+}
+
+.navbar .underline:hover {
+    color: rgb(122, 97, 50);
+    transition: 0.5s;
+}
+
+.navbar .underline::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background:orange;
+    transition: .2s
+}
+
+.navbar .menu:hover::before {
+    width: 100%;
+}
+
+.image-container {
+    display: block;
+    margin-top: 125px;
+    width: 100%;
+    background-color: red;
+}
+
+#hero-image {
+    display: block;
+    width: 100%;
+}
+
+
+.promo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    height: calc(100vh - 125px);
+}
+
+.promo-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+#promologo {
+    width: 50px;
+}
+
+.promo-title {
+    font-size: 40px;
+}
+.promo-title .promo {
+    color: orangered;
+    font-weight: 800;
+}
+
+.promo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.promo-container ul li {
+    list-style-type: none;
+}
+
+.promo-list-container {
+    display: flex;
+    gap: 50px;
+}
+
+.promo-list-description {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+}
+
+.promo-list-description span{
+    color: orangered;
+    font-weight: 800;
+}
+
+.promo-images {
+    filter: drop-shadow(20px 20px 15px orange);
+    border-radius: 30px;
+    width: 250px;
+    opacity: 1;
+}
+
+
+.featured-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    height: calc(100vh - 125px);
+    width: 100%;
+}
+
+#featured-image {
+    width: 400px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    filter: drop-shadow(10px 20px 10px black);
+
+
+}
+
+.featured-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 100px;
+    gap: 40px;
+}
+
+.featured-item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.featured-item-description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.featured-item-description p {
+    line-height: 30px;
+}
+
+.featured-title-container {
+    display: flex;
+    gap: 20px;
+}
+.featured-title-container h1 {
+    font-size: 40px;
+}
+
+.featured-title-container h1 span {
+    color: orangered;
+    font-weight: 800;
+}
+
+#featuredlogo {
+    width: 40px;
+}
+
+footer {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  #nav_logo {
+    animation: shake 3s;
+    height: 125px;
+    animation-iteration-count: infinite;
+}
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+

@@ -1,0 +1,145 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.aboutus-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 125px;
+    height: calc(100vh - 125px);
+    padding: 0 50px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: white;
+}
+
+#nav_logo {
+    height: 125px;
+}
+
+.navbar {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.navbar .menu {
+    position: relative;
+    font-size: 20px;
+    color: rgb(174, 138, 71);
+    font-weight: 500;
+    text-decoration: none;
+}  
+
+.navbar .ordernowbutton {
+    padding: 20px 30px;
+    background-color: orangered;
+    color: white;
+    border-radius: 50px;
+}
+
+.navbar .ordernowbutton:hover {
+    background-color: rgb(184, 49, 0);
+    transition: 0.5s;
+}
+
+.navbar .underline:hover {
+    color: rgb(122, 97, 50);
+    transition: 0.5s;
+}
+
+.navbar .underline::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0; 
+    height: 2px;
+    background:orange;
+    transition: .2s
+}
+
+.navbar .menu:hover::before {
+    width: 100%;
+}
+
+#aboutusimage {
+    width: 600px;
+    display: block;
+    border-radius: 25px;
+}
+
+.aboutus-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutus-image-description {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutus-image-description p {
+    line-height: 30px;
+}
+
+
+.aboutus-image-description h1 {
+    font-size: 40px;
+    color: orangered;
+    font-style: italic;
+    font-weight: 800;
+}
+
+#nav_logo {
+    animation: shake 3s;
+    height: 125px;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+
+footer {
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+
